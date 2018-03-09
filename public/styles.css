@@ -1,0 +1,140 @@
+*, *:before, *:after
+{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #D07C23; /* background colour */
+    font: 15px "Calibri";
+}
+
+form {
+    background: #D07C23; /* form bg colour */
+    bottom: 0; /* keep at bottom of page */
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #fff6f3;
+    font-family: 'Chelsea Market', cursive;
+}
+
+
+.header {
+    margin-left: 20px;
+}
+
+#chat-box input {
+    border: 1px solid #93827F;
+    margin-right: .5%;
+    padding: 15px;
+    width: 88%;
+    background: #F9F0ED;
+}
+
+#chat-box button {
+    background: #93827F; /* bg colour */
+    border: none;
+    color: #F9F0ED; /* font colour */
+    line-height: 20px;
+    padding: 12px;
+    text-align: center;
+    width: 10%;
+}
+
+.container {
+    display: flex;
+    height: 83%;
+    flex-flow: row;
+}
+
+.chat-container {
+    position: relative;
+    height: 95%;
+    width: 95%;
+    overflow-y: auto;
+}
+
+.chat-msg-holder {
+    /*position: absolute;*/
+    position: relative;
+    width: 98%;
+    /* border: 1px solid rgba(0,0,0,1.0); */
+    background-color: floralwhite;
+    flex: 1; /* same as flex: 1 1 auto; */
+    /* Needed for when the area gets squished too far and there is content that can't be displayed */
+    overflow: auto;
+    margin-left: 10px;
+}
+
+
+#chat-messages {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 25px;
+}
+
+#chat-messages li {
+    padding: 5px 10px;
+}
+
+.divider {
+    position:absolute;
+    right: 27%;
+    top: 1%;
+    bottom: 5%;
+    border-left:1px solid rgba(255,255,255,0.8);
+}
+
+.user-container {
+    width: 35%;
+    overflow-y: auto;
+    padding: 10px;
+    margin-top: -75px;
+}
+
+#user-list {
+    margin: 5px;
+    padding: 5px;
+    background: #F9F0ED;
+}
+
+#user-list li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Chelsea Market', cursive;
+}
+
+#footer {
+    padding: 8px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}

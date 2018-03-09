@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <title>KUMA-CHAT</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <h1> ~* Welcome to KUMA-CHAT *~</h1>
+        <h2>Chat Log: </h2>
+        <p style="color: white; font-size: 18px; padding: 5px; " id="user-name"></p>
+    </div>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat-msg-holder">
+                <ul id="chat-messages"></ul>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="user-container">
+            <h1 style="margin-left: 5px;"> Current Users: </h1>
+            <p style="color: white;">Type "/nick nameHere" to insert a new nickname
+            <br>
+            Type "/nickcolor RRGGBB" to change nickname color</p>
+            <ul style="list-style: none;" id="user-list"></ul>
+            <img style="opacity: 0.3; height: 50%" src="img/kuma.png">
+        </div>
+    </div>
+
+    <div class="footer">
+        <form action="" id="chat-box">
+            <input id="user-msg" autocomplete="off" autofocus/>
+            <button> Send </button>
+        </form>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+
+</body>
+</html>
